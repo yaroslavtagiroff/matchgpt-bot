@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = "8682146115:AAHSRT_UT6mpMCzI6WkF4fqHKFcwqOPii9k"
 CHANNEL_ID = -1003903740959
-MINI_APP_URL = "https://neuro-sport-sight.base44.app"
+MINI_APP_URL = "https://matchgpt-ai-scorer.lovable.app"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
