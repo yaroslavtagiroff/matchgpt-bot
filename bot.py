@@ -3,7 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "8682146115:AAHSRT_UT6mpMCzI6WkF4fqHKFcwqOPii9k"
+BOT_TOKEN = "8682146115:AAH1CsG58y-wnsbiZRUgGT8ou0C-AfJPgO4"
 CHANNEL_ID = -1003903740959
 MINI_APP_URL = "https://matchgpt-ai-scorer.lovable.app"
 
