@@ -23,7 +23,7 @@ async def start(message: types.Message):
     is_subscribed = await check_subscription(user_id)
     if is_subscribed:
         keyboard = InlineKeyboardMarkup()
-        keyboard.add(InlineKeyboardButton("🤖 Открыть MatchGPT", web_app=types.WebAppInfo(url=MINI_APP_URL)))
+        keyboard.add(InlineKeyboardButton("🤖 АНАЛИЗ  ", web_app=types.WebAppInfo(url=MINI_APP_URL)))
         await message.answer("✅ Добро пожаловать! Нажми кнопку:", reply_markup=keyboard)
     else:
         keyboard = InlineKeyboardMarkup()
@@ -37,7 +37,7 @@ async def check_sub_callback(callback: types.CallbackQuery):
     is_subscribed = await check_subscription(user_id)
     if is_subscribed:
         keyboard = InlineKeyboardMarkup()
-        keyboard.add(InlineKeyboardButton("🤖 Открыть MatchGPT", web_app=types.WebAppInfo(url=MINI_APP_URL)))
+        keyboard.add(InlineKeyboardButton("🤖 АНАЛИЗ ", web_app=types.WebAppInfo(url=MINI_APP_URL)))
         await callback.message.answer("✅ Отлично! Теперь у тебя есть доступ:", reply_markup=keyboard)
     else:
         await callback.answer("❌ Ты ещё не подписался на канал!", show_alert=True)
